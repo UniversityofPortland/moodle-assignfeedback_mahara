@@ -20,6 +20,13 @@ class assign_feedback_mahara extends assign_feedback_plugin {
   /**
    * @see parent
    */
+  public function has_user_summary() {
+    return false;
+  }
+
+  /**
+   * @see parent
+   */
   public function get_settings(MoodleQuickForm $form) {
     $plugin = $this->assignment->get_submission_plugin_by_type('mahara');
     if (empty($plugin)) {
