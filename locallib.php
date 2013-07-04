@@ -33,7 +33,11 @@ class assign_feedback_mahara extends assign_feedback_plugin {
       $form->setDefault('assignfeedback_mahara_enabled', 0);
       $form->hardFreeze('assignfeedback_mahara_enabled');
     } else {
-      $form->disabledIf('assignfeedback_mahara_enabled', 'assignsubmission_mahara_enabled');
+      if ($form->getElementType('assignfeedback_mahara_enabled') == 'selectyesno') {
+        $form->disabledIf('assignfeedback_mahara_enabled', 'assignsubmission_mahara_enabled', 'eq', '0');
+      } else {
+        $form->disabledIf('assignfeedback_mahara_enabled', 'assignsubmission_mahara_enabled');
+      }
     }
   }
 
