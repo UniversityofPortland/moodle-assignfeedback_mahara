@@ -18,10 +18,10 @@ plugin one of two ways:
 2. Execute the folowing command:
 
 ```
-> git clone git@github.com:philcali/assign-mahara-feedback.git {Moodle_Root}/mod/assign/feedback/mahara
+> git clone git@github.com:fellowapeman/assign-mahara-feedback.git {Moodle_Root}/mod/assign/feedback/mahara
 ```
 
 The remainder of the installation can be achieved within Moodle by clicking on the _Notifications_ link.
 
-[1]: https://github.com/philcali/assign-mahara
-[2]: https://github.com/philcali/local-mahara
+[1]: https://github.com/fellowapeman/assign-mahara
+[2]: https://github.com/fellowapeman/local-mahara
