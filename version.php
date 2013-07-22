@@ -1,7 +1,7 @@
 <?php
 
 $plugin->version = 2013061200;
-$plugin->requires = 2012061700;
+$plugin->requires = 2012062500;
 $plugin->component = 'assignfeedback_mahara';
 
 $plugin->dependencies = array(
