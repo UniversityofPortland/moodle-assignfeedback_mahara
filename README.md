@@ -18,13 +18,13 @@ plugin in one of two ways:
 2. Execute the folowing command:
 
 ```
-> git clone git@github.com:fellowapeman/assign-mahara-feedback.git {Moodle_Root}/mod/assign/feedback/mahara
+> git clone git@github.com:fellowapeman/moodle-assignfeedback_mahara.git {Moodle_Root}/mod/assign/feedback/mahara
 ```
 
 The remainder of the installation can be achieved within Moodle by clicking on the _Notifications_ link.
 
-[1]: https://github.com/fellowapeman/assign-mahara
-[2]: https://github.com/fellowapeman/local-mahara
+[1]: https://github.com/fellowapeman/moodle-assign_mahara
+[2]: https://github.com/fellowapeman/moodle-local_mahara
 [3]: http://manual.mahara.org/en/1.5/mahoodle/mahoodle.html
 
 ## License
