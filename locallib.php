@@ -28,16 +28,11 @@ class assign_feedback_mahara extends assign_feedback_plugin {
    * @see parent
    */
   public function get_settings(MoodleQuickForm $form) {
-    $mahara = $form->elementExists('assignsubmission_mahara_enabled');
-    if (!$mahara) {
-      $form->setDefault('assignfeedback_mahara_enabled', 0);
+    $plugin = $this->assignment->get_submission_plugin_by_type('mahara');
+    if (empty($plugin)) {
       $form->hardFreeze('assignfeedback_mahara_enabled');
     } else {
-      if ($form->getElementType('assignfeedback_mahara_enabled') == 'selectyesno') {
-        $form->disabledIf('assignfeedback_mahara_enabled', 'assignsubmission_mahara_enabled', 'eq', '0');
-      } else {
-        $form->disabledIf('assignfeedback_mahara_enabled', 'assignsubmission_mahara_enabled');
-      }
+      $form->disabledIf('assignfeedback_mahara_enabled', 'assignsubmission_mahara_enabled');
     }
   }
 
